@@ -51,8 +51,8 @@ const UserCardStyle = styled(Link)(({ theme }) => ({
   },
 }));
 
-const ListStyle = styled(List)(({ theme }) => ({
-  marginTop: theme.spacing(2),
+const ListStyle = styled(List)(() => ({
+  marginTop: 22,
 }));
 
 const GetMoreStyle = styled(Box)(({ theme }) => ({
@@ -122,7 +122,7 @@ const SideDrawer = (props) => {
     <>
       {/* Logo */}
       <Toolbar>
-        <LogoStyle variant="h6" component="h2">
+        <LogoStyle variant="h6" component="h2" className="">
           MUI Dash
         </LogoStyle>
       </Toolbar>
